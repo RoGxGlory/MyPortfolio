@@ -130,7 +130,7 @@ const Contact = () => {
             <div className="glass-card p-6 rounded-xl text-center">
               <MessageSquare className="w-8 h-8 mx-auto mb-3 text-primary" />
               <h3 className="font-semibold mb-1">Discord</h3>
-              <p className="text-muted-foreground text-sm">rog_</p>
+              <p className="text-muted-foreground text-sm">_rog</p>
             </div>
           </div>
         </div>
