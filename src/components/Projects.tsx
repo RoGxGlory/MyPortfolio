@@ -1,6 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { ExternalLink, Github } from "lucide-react";
+import { ExternalLink } from "lucide-react";
+import { Icon } from "@iconify/react";
 
 const projects = [
 	{
@@ -10,6 +11,7 @@ const projects = [
 		tags: ["Unity", "C#", "Game Design"],
 		image: "/ProjectsImages/Voidrift_Cropped.png",
 		gradient: "from-purple-500 to-pink-500",
+		github: "https://github.com/RoGxGlory/VoidriftSurvivors",
 	},
 	{
 		title: "Vault of Shadows",
@@ -18,14 +20,15 @@ const projects = [
 		tags: ["Windows CMD", "C#", "Multiplayer"],
 		image: "/placeholder.svg",
 		gradient: "from-blue-500 to-purple-500",
+		github: "https://github.com/RoGxGlory/VaultOfShadows",
 	},
 	{
 		title: "The Iron Curtain",
 		description:
 			"A co-op survival horror game, where you play as an agent in a team of up to four players tasked with investigating paranormal events to track and capture the supernatural entities responsible",
 		tags: ["Unreal Engine", "Networking", "Gameplay Programming"],
-		image: "/placeholder.svg",
 		gradient: "from-pink-500 to-red-500",
+		github: "https://github.com/RoGxGlory/TheIronCurtain",
 	},
 	{
 		title: "MangaDemon",
@@ -34,6 +37,7 @@ const projects = [
 		tags: ["Community", "Social Media", "Events"],
 		image: "/ProjectsImages/MangaDemon.png",
 		gradient: "from-orange-500 to-pink-500",
+        website: "https://demonicscans.org/index.php",
 	},
 ];
 
@@ -87,22 +91,34 @@ const Projects = () => {
 									))}
 								</div>
 								<div className="flex gap-3">
-									<Button
-										size="sm"
-										variant="outline"
-										className="gap-2"
-									>
-										<ExternalLink className="w-4 h-4" />
-										Demo
-									</Button>
-									<Button
-										size="sm"
-										variant="outline"
-										className="gap-2"
-									>
-										<Github className="w-4 h-4" />
-										Code
-									</Button>
+									{/* Only show Website button if project.website exists */}
+									{project.website && (
+										<Button
+											size="sm"
+											variant="outline"
+											className="gap-2"
+											asChild
+										>
+											<a href={project.website} target="_blank" rel="noopener noreferrer">
+												<ExternalLink className="w-4 h-4" />
+												Website
+											</a>
+										</Button>
+									)}
+									{/* Only show GitHub button if project.github exists */}
+									{project.github && (
+										<Button
+											size="sm"
+											variant="outline"
+											className="gap-2"
+											asChild
+										>
+											<a href={project.github} target="_blank" rel="noopener noreferrer">
+												<Icon icon="mdi:github" className="w-4 h-4" />
+												Code
+											</a>
+										</Button>
+									)}
 								</div>
 							</CardContent>
 						</Card>
@@ -114,4 +130,3 @@ const Projects = () => {
 };
 
 export default Projects;
-
