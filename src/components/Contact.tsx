@@ -33,34 +33,35 @@ const Contact = () => {
     }
   });
 
-  const handleSubmit = (data: ContactFormData) => {
-      setIsSubmitting(true);
+    const handleSubmit = async (data: ContactFormData) => {
+        setIsSubmitting(true);
 
-      // The URL of your new Render Web Service
-      const API_URL = 'https://myportfolio-6ack.onrender.com';
+        // The URL of your new Render Web Service
+        const API_URL = 'https://myportfolio-6ack.onrender.com';
 
-      try {
-          const response = await fetch(API_URL, { // <-- Use the full Render URL here
-              method: 'POST',
-              headers: { 'Content-Type': 'application/json' },
-              body: JSON.stringify(data),
-          });
+        try {
+            const response = await fetch(API_URL, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(data),
+            });
 
-          if (!response.ok) {
-              throw new Error('Network response was not ok');
-          }
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
 
-          toast.success("Message sent! I'll get back to you soon.");
-          form.reset();
+            toast.success("Message sent! I'll get back to you soon.");
+            form.reset();
 
-      } catch (error) {
-          // ... (error handling remains the same)
-      } finally {
-          setIsSubmitting(false);
-      }
-  };
+        } catch (error) {
+            // ... (error handling remains the same)
+        } finally {
+            setIsSubmitting(false);
+        }
+    };
 
-  return (
+
+    return (
     <section id="contact" className="py-24 relative">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16 animate-fade-in">
