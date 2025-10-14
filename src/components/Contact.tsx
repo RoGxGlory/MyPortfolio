@@ -34,8 +34,30 @@ const Contact = () => {
   });
 
   const handleSubmit = (data: ContactFormData) => {
-    toast.success("Message sent! I'll get back to you soon.");
-    form.reset();
+      setIsSubmitting(true);
+
+      // The URL of your new Render Web Service
+      const API_URL = 'https://my-email-server.onrender.com/api/send-email';
+
+      try {
+          const response = await fetch(API_URL, { // <-- Use the full Render URL here
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify(data),
+          });
+
+          if (!response.ok) {
+              throw new Error('Network response was not ok');
+          }
+
+          toast.success("Message sent! I'll get back to you soon.");
+          form.reset();
+
+      } catch (error) {
+          // ... (error handling remains the same)
+      } finally {
+          setIsSubmitting(false);
+      }
   };
 
   return (
