@@ -36,8 +36,8 @@ const Contact = () => {
     const handleSubmit = async (data: ContactFormData) => {
         setIsSubmitting(true);
 
-        // The URL of your new Render Web Service
-        const API_URL = 'https://myportfolio-6ack.onrender.com';
+        // The correct API endpoint for sending emails
+        const API_URL = 'https://myportfolio-6ack.onrender.com/api/send-email';
 
         try {
             const response = await fetch(API_URL, {
