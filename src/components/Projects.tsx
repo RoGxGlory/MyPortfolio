@@ -32,7 +32,7 @@ const projects = [
 		description:
 			"The MangaDemon team builds its community by operating as a manga scanlation group and developing the web game Veyra, where players defend a realm from monster waves through a stamina-based combat and crafting system",
 		tags: ["Community", "Social Media", "Events"],
-		image: "ProjectsImages/MangaDemon.png",
+		image: "/ProjectsImages/MangaDemon.png",
 		gradient: "from-orange-500 to-pink-500",
 	},
 ];
