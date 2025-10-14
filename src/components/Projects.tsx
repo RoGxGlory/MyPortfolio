@@ -8,7 +8,7 @@ const projects = [
 		description:
 			"As the last survivor against the void, you must harness its own power to destroy the relentless swarms that pour from the rift",
 		tags: ["Unity", "C#", "Game Design"],
-		image: "/ProjectsImages/Voidrift.png",
+		image: "/ProjectsImages/Voidrift_Cropped.png",
 		gradient: "from-purple-500 to-pink-500",
 	},
 	{
