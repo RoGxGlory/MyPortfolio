@@ -9,7 +9,7 @@ const projects = [
 		description:
 			"As the last survivor against the void, you must harness its own power to destroy the relentless swarms that pour from the rift",
 		tags: ["Unity", "C#", "Game Design"],
-		image: "/ProjectsImages/Voidrift_Cropped.png",
+		image: "./ProjectsImages/Voidrift_Cropped.png",
 		gradient: "from-purple-500 to-pink-500",
 		github: "https://github.com/RoGxGlory/VoidriftSurvivors",
 	},
@@ -26,7 +26,7 @@ const projects = [
 		description:
 			"A co-op survival horror game, where you play as an agent in a team of up to four players tasked with investigating paranormal events to track and capture the supernatural entities responsible",
 		tags: ["Unreal Engine", "Networking", "Gameplay Programming"],
-        image: "/ProjectsImages/TheIronCurtain.png",
+        image: "./ProjectsImages/TheIronCurtain.png",
 		gradient: "from-pink-500 to-red-500",
 		github: "https://github.com/RoGxGlory/TheIronCurtain",
 	},
@@ -35,7 +35,7 @@ const projects = [
 		description:
 			"The MangaDemon team builds its community by operating as a manga scanlation group and developing the web game Veyra, where players defend a realm from monster waves through a stamina-based combat and crafting system",
 		tags: ["Community", "Social Media", "Events"],
-		image: "/ProjectsImages/MangaDemon.png",
+		image: "./ProjectsImages/MangaDemon.png",
 		gradient: "from-orange-500 to-pink-500",
         website: "https://demonicscans.org/index.php",
 	},
