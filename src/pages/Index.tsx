@@ -9,15 +9,17 @@ import heroBg from "@/assets/hero-bg.jpg";
 
 const Index = () => {
   return (
-    <div className="min-h-screen relative">
-      {/* Fixed Background Image */}
-      <div 
-        className="fixed inset-0 bg-cover bg-center opacity-30 -z-10"
-        style={{ backgroundImage: `url(${heroBg})` }}
-      />
-      
-      {/* Background Overlay */}
-      <div className="fixed inset-0 bg-background/80 -z-10" />
+    <div 
+      className="min-h-screen relative"
+      style={{ 
+        backgroundImage: `url(${heroBg})`,
+        backgroundRepeat: 'repeat-y',
+        backgroundSize: '100% auto',
+        backgroundPosition: 'center top'
+      }}
+    >
+      {/* Background Overlay - more transparent to show background */}
+      <div className="absolute inset-0 bg-background/70 -z-10 pointer-events-none" />
       
       <Navigation />
       <Hero />
