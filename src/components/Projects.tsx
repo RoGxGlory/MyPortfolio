@@ -4,26 +4,26 @@ import { ExternalLink, Github } from "lucide-react";
 
 const projects = [
   {
-    title: "Neon Uprising",
-    description: "A cyberpunk-themed action RPG with immersive storytelling and fast-paced combat mechanics",
+    title: "Voidrift Survivors",
+    description: "As the last survivor against the void, you must harness its own power to destroy the relentless swarms that pour from the rift",
     tags: ["Unity", "C#", "Game Design"],
     gradient: "from-purple-500 to-pink-500"
   },
   {
-    title: "Shadow Realms",
-    description: "Dark fantasy adventure game featuring procedural world generation and multiplayer co-op",
-    tags: ["Unreal Engine", "C++", "Multiplayer"],
+    title: "Vault of Shadows",
+    description: "A console-based dungeon exploration game with multi-account support, encrypted save management, and interactive menus for exploration, combat, and leaderboard tracking",
+    tags: ["Windows CMD", "C#", "Multiplayer"],
     gradient: "from-blue-500 to-purple-500"
   },
   {
-    title: "Pixel Tactics",
-    description: "Turn-based strategy game with pixel art aesthetics and competitive online gameplay",
-    tags: ["Unity", "Networking", "Game Design"],
+    title: "The Iron Curtain",
+    description: "A co-op survival horror game, where you play as an agent in a team of up to four players tasked with investigating paranormal events to track and capture the supernatural entities responsible",
+    tags: ["Unreal Engine", "Networking", "Gameplay Programming"],
     gradient: "from-pink-500 to-red-500"
   },
   {
-    title: "MangaDemon Community",
-    description: "Built and manage a thriving community of 50K+ manga enthusiasts with engagement-focused initiatives",
+    title: "MangaDemon",
+    description: "The MangaDemon team builds its community by operating as a manga scanlation group and developing the web game Veyra, where players defend a realm from monster waves through a stamina-based combat and crafting system",
     tags: ["Community", "Social Media", "Events"],
     gradient: "from-orange-500 to-pink-500"
   }
