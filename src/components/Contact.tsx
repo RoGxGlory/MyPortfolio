@@ -124,13 +124,13 @@ const Contact = () => {
             <div className="glass-card p-6 rounded-xl text-center">
               <Mail className="w-8 h-8 mx-auto mb-3 text-primary" />
               <h3 className="font-semibold mb-1">Email</h3>
-              <p className="text-muted-foreground text-sm">contact@example.com</p>
+              <p className="text-muted-foreground text-sm">benabdeljalilrayane1@gmail.com</p>
             </div>
             
             <div className="glass-card p-6 rounded-xl text-center">
               <MessageSquare className="w-8 h-8 mx-auto mb-3 text-primary" />
               <h3 className="font-semibold mb-1">Discord</h3>
-              <p className="text-muted-foreground text-sm">@yourusername</p>
+              <p className="text-muted-foreground text-sm">rog_</p>
             </div>
           </div>
         </div>
