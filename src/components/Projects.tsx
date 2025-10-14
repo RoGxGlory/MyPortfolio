@@ -18,7 +18,6 @@ const projects = [
 		description:
 			"A console-based dungeon exploration game with multi-account support, encrypted save management, and interactive menus for exploration, combat, and leaderboard tracking",
 		tags: ["Windows CMD", "C#", "Multiplayer"],
-		image: "/placeholder.svg",
 		gradient: "from-blue-500 to-purple-500",
 		github: "https://github.com/RoGxGlory/VaultOfShadows",
 	},
@@ -27,6 +26,7 @@ const projects = [
 		description:
 			"A co-op survival horror game, where you play as an agent in a team of up to four players tasked with investigating paranormal events to track and capture the supernatural entities responsible",
 		tags: ["Unreal Engine", "Networking", "Gameplay Programming"],
+        image: "/ProjectsImages/TheIronCurtain.png",
 		gradient: "from-pink-500 to-red-500",
 		github: "https://github.com/RoGxGlory/TheIronCurtain",
 	},
