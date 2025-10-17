@@ -18,7 +18,7 @@ const projects = [
 		description:
 			"A console-based dungeon exploration game with multi-account support, encrypted save management, and interactive menus for exploration, combat, and leaderboard tracking",
 		tags: ["Windows CMD", "C#", "Multiplayer"],
-        image: "./ProjectsImages/VaultOfShadows_Cropped2.png",
+        image: "./ProjectsImages/VaultOfShadows_Cropped3.png",
 		gradient: "from-blue-500 to-purple-500",
 		github: "https://github.com/RoGxGlory/VaultOfShadows",
 	},
