@@ -31,9 +31,9 @@ export const projects: Project[] = [
     id: "vault-of-shadows",
     title: "Vault of Shadows",
     description:
-      "A console-based dungeon exploration game with multi-account support, encrypted save management, and interactive menus for exploration, combat, and leaderboard tracking",
+      "A Unity-based dungeon exploration game with multi-account support, encrypted save management, and interactive menus for exploration, combat, and leaderboard tracking.",
     fullDescription:
-      "Vault of Shadows is a text-based dungeon crawler featuring a robust account system, procedural dungeon generation, and turn-based combat. The game emphasizes player progression, strategic decision-making, and competitive leaderboards. Built entirely in C# with a focus on clean architecture and data persistence.",
+      "Vault of Shadows is a Unity-based dungeon crawler featuring a robust account system, procedural dungeon generation, and turn-based combat. The game emphasizes player progression, strategic decision-making, and competitive leaderboards. Developed in C# with a focus on modular architecture and secure data persistence.",
     detailedFeatures: [
       "Multi-account system with encrypted save files",
       "Procedural dungeon generation algorithm",
