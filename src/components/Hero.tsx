@@ -59,18 +59,18 @@ const Hero = () => {
             </Button>
           </div>
           
-          <div className="flex gap-6 justify-center pt-8">
+          <div className="flex gap-8 justify-center pt-8">
             <a href="https://github.com/RoGxGlory" target="_blank" rel="noopener noreferrer" 
-               className="text-muted-foreground hover:text-primary transition-colors">
-              <Github className="w-6 h-6" />
+               className="text-muted-foreground hover:text-primary transition-all hover:scale-110">
+              <Github className="w-10 h-10" />
             </a>
             <a href="https://www.linkedin.com/in/rayane-benabdeljalil-" target="_blank" rel="noopener noreferrer"
-               className="text-muted-foreground hover:text-primary transition-colors">
-              <Linkedin className="w-6 h-6" />
+               className="text-muted-foreground hover:text-primary transition-all hover:scale-110">
+              <Linkedin className="w-10 h-10" />
             </a>
             <a href="mailto:benabdeljalilrayane1@gmail.com"
-               className="text-muted-foreground hover:text-primary transition-colors">
-              <Mail className="w-6 h-6" />
+               className="text-muted-foreground hover:text-primary transition-all hover:scale-110">
+              <Mail className="w-10 h-10" />
             </a>
           </div>
         </div>

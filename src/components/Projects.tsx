@@ -1,6 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { ExternalLink } from "lucide-react";
+import { ExternalLink, Play } from "lucide-react";
 import { Icon } from "@iconify/react";
 
 const projects = [
@@ -10,8 +10,10 @@ const projects = [
 			"As the last survivor against the void, you must harness its own power to destroy the relentless swarms that pour from the rift",
 		tags: ["Unity", "C#", "Game Design"],
 		image: "./ProjectsImages/Voidrift_Cropped.png",
+		video: "",
 		gradient: "from-purple-500 to-pink-500",
 		github: "https://github.com/RoGxGlory/VoidriftSurvivors",
+		demo: "",
 	},
 	{
 		title: "Vault of Shadows",
@@ -19,8 +21,10 @@ const projects = [
 			"A console-based dungeon exploration game with multi-account support, encrypted save management, and interactive menus for exploration, combat, and leaderboard tracking",
 		tags: ["Unity", "C#", "Multiplayer"],
         image: "./ProjectsImages/VaultOfShadows_Cropped3.png",
+		video: "",
 		gradient: "from-blue-500 to-purple-500",
 		github: "https://github.com/RoGxGlory/VaultOfShadows",
+		demo: "",
 	},
 	{
 		title: "The Iron Curtain",
@@ -28,8 +32,10 @@ const projects = [
 			"A co-op survival horror game, where you play as an agent in a team of up to four players tasked with investigating paranormal events to track and capture the supernatural entities responsible",
 		tags: ["Unreal Engine", "Networking", "Gameplay Programming"],
         image: "./ProjectsImages/TheIronCurtain.png",
+		video: "",
 		gradient: "from-pink-500 to-red-500",
 		github: "https://github.com/RoGxGlory/TheIronCurtain",
+		demo: "",
 	},
 	{
 		title: "MangaDemon",
@@ -37,8 +43,10 @@ const projects = [
 			"The MangaDemon team builds its community by operating as a manga scanlation group and developing the web game Veyra, where players defend a realm from monster waves through a stamina-based combat and crafting system",
 		tags: ["Community", "Social Media", "Events"],
 		image: "./ProjectsImages/MangaDemon.png",
+		video: "",
 		gradient: "from-orange-500 to-pink-500",
         website: "https://demonicscans.org/index.php",
+		demo: "",
 	},
 ];
 
@@ -63,7 +71,20 @@ const Projects = () => {
 							className="glass-card border-border overflow-hidden group hover:scale-105 transition-all duration-300"
 							style={{ animationDelay: `${index * 0.1}s` }}
 						>
-							{project.image ? (
+							{project.video ? (
+								<div className="relative h-48 w-full bg-black">
+									<video
+										className="h-full w-full object-cover"
+										controls
+										preload="metadata"
+									>
+										<source src={project.video} type="video/mp4" />
+										<source src={project.video} type="video/webm" />
+										<source src={project.video} type="video/ogg" />
+										Your browser does not support the video tag.
+									</video>
+								</div>
+							) : project.image ? (
 								<img
 									src={project.image}
 									alt={project.title}
@@ -91,7 +112,21 @@ const Projects = () => {
 										</span>
 									))}
 								</div>
-								<div className="flex gap-3">
+								<div className="flex flex-wrap gap-3">
+									{/* Demo button */}
+									{project.demo && (
+										<Button
+											size="sm"
+											variant="default"
+											className="gap-2"
+											asChild
+										>
+											<a href={project.demo} target="_blank" rel="noopener noreferrer">
+												<Play className="w-4 h-4" />
+												Play Demo
+											</a>
+										</Button>
+									)}
 									{/* Only show Website button if project.website exists */}
 									{project.website && (
 										<Button
