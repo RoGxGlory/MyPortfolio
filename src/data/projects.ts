@@ -18,8 +18,8 @@ export const projects: Project[] = [
     technicalChallenges:
       "Implementing an efficient object pooling system to handle hundreds of enemies simultaneously while maintaining 60 FPS. Designed a flexible ability system that allows for easy addition of new powers and synergies.",
     myRole:
-      "Solo developer - Responsible for all game design, programming, and systems implementation. Created the core gameplay loop, enemy AI behaviors, and progression systems.",
-    tags: ["Unity", "C#", "Game Design"],
+      "Solo Developer - Designed and programmed all game systems. Implemented the core gameplay loop, the dynamic power-up system, and the object pooling architecture to ensure high performance.",
+    tags: ["Unity", "C#", "Roguelike", "Game Design"],
     image: "./ProjectsImages/Voidrift_Cropped.png",
     video: "",
     videoType: "local",
@@ -45,7 +45,7 @@ export const projects: Project[] = [
     technicalChallenges:
       "Implementing secure save file encryption to prevent cheating while maintaining cross-platform compatibility. Designed a modular system architecture that separates game logic, data persistence, and UI rendering.",
     myRole:
-      "Lead programmer - Architected the entire codebase, implemented the save system, combat mechanics, and procedural generation algorithms. Focused on code maintainability and extensibility.",
+      "Solo Developer - Designed and programmed all game systems. Architected the entire codebase and implemented all core systems, including the encrypted save management, procedural dungeon generation, turn-based combat, and character progression.",
     tags: ["Unity", "C#", "Multiplayer"],
     image: "./ProjectsImages/VaultOfShadows_Cropped3.png",
     video: "",
@@ -72,7 +72,7 @@ export const projects: Project[] = [
     technicalChallenges:
       "Implementing robust networked gameplay with client-side prediction and server reconciliation for smooth multiplayer experience. Created an AI director system that dynamically adjusts difficulty based on player performance and team coordination.",
     myRole:
-      "Gameplay programmer - Developed networking systems, AI behaviors, and gameplay mechanics. Collaborated with designers to implement the core loop and balance multiplayer interactions.",
+      "Lead Programmer - Architected the core technical systems, including the 4-player co-op networking and the dynamic AI director. Led the implementation of all major gameplay mechanics, from the AI behavior trees to the procedural mission generation, and collaborated with design to ensure technical execution.",
     tags: ["Unreal Engine", "Networking", "Gameplay Programming"],
     image: "./ProjectsImages/TheIronCurtain.png",
     video: "",

@@ -6,27 +6,27 @@ const skills = [
   { 
     name: ".NET Framework & Core", 
     icon: Code2,
-    details: "Expertise in building scalable applications using .NET Framework 4.8 and .NET Core 6.0+. Experience with ASP.NET MVC, Entity Framework, and LINQ for robust backend development."
+    details: "Expertise in building scalable backend applications using .NET 8.0 (Core). Experience with ASP.NET Core for building Web APIs and utilizing the official MongoDB .NET Driver (with LINQ) to connect to and manage data collections in a MongoDB Atlas cluster."
   },
   { 
     name: "Web APIs", 
     icon: Globe,
-    details: "Development of RESTful APIs with proper authentication, rate limiting, and documentation. Experience with ASP.NET Web API, middleware integration, and API versioning."
+    details: "Development of RESTful APIs with ASP.NET Core to serve as the backend for data-driven applications. Successfully deployed a Web API to Render, which interfaces directly with MongoDB Atlas. Implemented account registration and credential-based login, with secure password hashing and validation."
   },
   { 
     name: "Game Engines", 
     icon: Gamepad2,
-    details: "Proficient in Unity (C#) and Unreal Engine (C++/Blueprints). Experience with game architecture patterns, physics systems, networking, and performance optimization."
+    details: "Proficient in Unity (C#) and Unreal Engine (C++/Blueprints), with experience in game architecture, physics systems, and performance optimization. Skilled in secure account management, password hashing, encrypted game data storage, and protecting data integrity for online features."
   },
   { 
     name: "Database (NoSQL)", 
     icon: Database,
-    details: "Experience with MongoDB, Redis, and Firebase. Skilled in schema design, aggregation pipelines, indexing strategies, and real-time data synchronization."
+    details: "Experience developing RESTful APIs with ASP.NET Core and MongoDB, including secure account registration and login with password hashing, schema modeling with C# classes, and basic CRUD operations. Skilled in user input validation, environment-based configuration, and protecting data integrity with HMAC signatures and AES encryption. Proficient in organizing code with controllers, models, and services."
   },
   { 
     name: "Microservices Architecture", 
     icon: Server,
-    details: "Design and implementation of distributed systems using microservices patterns, message queues, and containerization with Docker."
+    details: "Practical experience in containerization and microservice deployment. Containerized a .NET 8.0 Web API using Docker and deployed the image to Render. This created a scalable, container-based service responsible for all data persistence and business logic, isolating the MongoDB Atlas data layer."
   },
   { 
     name: "Community Management", 
