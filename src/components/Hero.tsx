@@ -25,12 +25,6 @@ const Hero = () => {
       {/* Content */}
       <div className="container mx-auto px-6 relative z-10">
         <div className="text-center space-y-6 animate-fade-in">
-          <div className="inline-block">
-            <span className="text-sm font-medium px-4 py-2 rounded-full glass-card">
-              Game Developer & Community Manager
-            </span>
-          </div>
-
           <h1 className="text-5xl md:text-7xl font-bold">
             <span className="text-gradient">Benabdeljalil Rayane</span>
             <br />
