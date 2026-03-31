@@ -75,6 +75,14 @@ const Hero = () => {
             >
               <Mail className="w-10 h-10" />
             </a>
+            <a
+              href="/CV_FR.pdf"
+              download
+              className="text-muted-foreground hover:text-primary transition-all hover:scale-110"
+              title="Download CV"
+            >
+              <FileDown className="w-10 h-10" />
+            </a>
           </div>
         </div>
       </div>
