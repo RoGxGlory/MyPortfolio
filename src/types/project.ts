@@ -16,4 +16,5 @@ export interface Project {
   website?: string;
   gallery?: string[];
   featured?: boolean;
+  itchioUrl?: string;
 }
