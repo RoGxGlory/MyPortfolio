@@ -51,7 +51,7 @@ export const projects: Project[] = [
     myRole:
       "Solo Developer - Designed and programmed all game systems. Implemented the core gameplay loop, the dynamic power-up system, and the object pooling architecture to ensure high performance.",
     tags: ["Unity", "C#", "Roguelike", "Game Design"],
-    image: "./ProjectsImages/Voidrift_Cropped.png",
+    image: "/MyPortfolio//ProjectsImages/Voidrift_Cropped.png",
     video: "",
     videoType: "local",
     gradient: "from-purple-500 to-pink-500",
@@ -129,7 +129,7 @@ export const projects: Project[] = [
     myRole:
       "Solo Developer - Designed and programmed all game systems. Architected the entire codebase and implemented all core systems, including the encrypted save management, procedural dungeon generation, turn-based combat, and character progression.",
     tags: ["Unity", "C#", "Multiplayer"],
-    image: "./ProjectsImages/VaultOfShadows_Cropped3.png",
+    image: "/MyPortfolio//ProjectsImages/VaultOfShadows_Cropped3.png",
     video: "",
     videoType: "local",
     gradient: "from-blue-500 to-purple-500",
@@ -156,7 +156,7 @@ export const projects: Project[] = [
     myRole:
       "Lead Programmer - Architected the core technical systems, including the 4-player co-op networking and the dynamic AI director. Led the implementation of all major gameplay mechanics, from the AI behavior trees to the procedural mission generation, and collaborated with design to ensure technical execution.",
     tags: ["Unreal Engine", "Networking", "Gameplay Programming"],
-    image: "./ProjectsImages/TheIronCurtain.png",
+    image: "/MyPortfolio//ProjectsImages/TheIronCurtain.png",
     video: "",
     videoType: "local",
     gradient: "from-pink-500 to-red-500",
@@ -182,7 +182,7 @@ export const projects: Project[] = [
     myRole:
       "Community Manager & Developer - Lead the scanlation team, manage social media presence, and develop the Veyra web game. Organize community events and maintain engagement across multiple platforms.",
     tags: ["Community", "Social Media", "Events"],
-    image: "./ProjectsImages/MangaDemon.png",
+    image: "/MyPortfolio//ProjectsImages/MangaDemon.png",
     video: "",
     videoType: "local",
     gradient: "from-orange-500 to-pink-500",
