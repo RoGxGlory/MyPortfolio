@@ -5,7 +5,8 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  base: "/MyPortfolio/",
+  // Make the base dynamic! Production gets the sub-folder, Development gets the root.
+  base: mode === "production" ? "/MyPortfolio/" : "/",
   server: {
     host: "::",
     port: 8080,
