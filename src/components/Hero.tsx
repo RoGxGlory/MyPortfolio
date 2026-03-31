@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
+import { ArrowDown, Github, Linkedin, Mail, FileDown } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
 
 const Hero = () => {
@@ -74,6 +74,14 @@ const Hero = () => {
               className="text-muted-foreground hover:text-primary transition-all hover:scale-110"
             >
               <Mail className="w-10 h-10" />
+            </a>
+            <a
+              href="/CV_FR.pdf"
+              download
+              className="text-muted-foreground hover:text-primary transition-all hover:scale-110"
+              title="Download CV"
+            >
+              <FileDown className="w-10 h-10" />
             </a>
           </div>
         </div>
