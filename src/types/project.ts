@@ -18,3 +18,4 @@ export interface Project {
   featured?: boolean;
   itchioUrl?: string;
 }
+}

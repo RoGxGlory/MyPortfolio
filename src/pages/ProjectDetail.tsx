@@ -93,6 +93,24 @@ const ProjectDetail = () => {
       <section className="py-16">
         <div className="container mx-auto px-6">
           <div className="max-w-5xl mx-auto space-y-12">
+            {/* itch.io Playable Embed */}
+            {project.itchioUrl && (
+              <Card className="glass-card border-border overflow-hidden">
+                <CardContent className="p-6">
+                  <h2 className="text-3xl font-bold mb-6">Play in Browser</h2>
+                  <div className="relative w-full" style={{ paddingBottom: "62.5%" }}>
+                    <iframe
+                      className="absolute top-0 left-0 w-full h-full rounded-lg border border-border"
+                      src={project.itchioUrl}
+                      title={`${project.title} - Play in Browser`}
+                      allowFullScreen
+                      allow="autoplay; fullscreen *; geolocation; microphone; camera; midi; monetization; xr-spatial-tracking; gamepad; gyroscope; accelerometer; xr; cross-origin-isolated; web-share"
+                    />
+                  </div>
+                </CardContent>
+              </Card>
+            )}
+
             {/* Video Section */}
             {project.video && (
               <Card className="glass-card border-border overflow-hidden">
