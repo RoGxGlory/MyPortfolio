@@ -34,7 +34,7 @@ export const projects: Project[] = [
   },
   {
     id: "voidrift-survivors",
-    title: "Voidrift Survivors",
+    title: "Vampire Survivors",
     description:
       "As the last survivor against the void, you must harness its own power to destroy the relentless swarms that pour from the rift",
     fullDescription:
