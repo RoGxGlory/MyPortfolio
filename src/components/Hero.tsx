@@ -10,18 +10,18 @@ const Hero = () => {
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image */}
-      <div 
-        className="absolute inset-0 bg-cover bg-center opacity-30"
-        style={{ backgroundImage: `url(${heroBg})` }}
-      />
-      
+      <div className="absolute inset-0 bg-cover bg-center opacity-30" style={{ backgroundImage: `url(${heroBg})` }} />
+
       {/* Gradient Overlay */}
       <div className="absolute inset-0 gradient-hero" />
-      
+
       {/* Animated Gradient Orbs */}
       <div className="absolute top-20 left-20 w-72 h-72 bg-primary/30 rounded-full blur-3xl animate-float" />
-      <div className="absolute bottom-20 right-20 w-96 h-96 bg-accent/30 rounded-full blur-3xl animate-float" style={{ animationDelay: "2s" }} />
-      
+      <div
+        className="absolute bottom-20 right-20 w-96 h-96 bg-accent/30 rounded-full blur-3xl animate-float"
+        style={{ animationDelay: "2s" }}
+      />
+
       {/* Content */}
       <div className="container mx-auto px-6 relative z-10">
         <div className="text-center space-y-6 animate-fade-in">
@@ -30,27 +30,27 @@ const Hero = () => {
               Game Developer & Community Manager
             </span>
           </div>
-          
+
           <h1 className="text-5xl md:text-7xl font-bold">
-            <span className="text-gradient">Crafting Digital</span>
+            <span className="text-gradient">Benabdeljalil Rayane</span>
             <br />
             <span className="text-foreground">Experiences</span>
           </h1>
-          
+
           <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto">
-            Building immersive games and fostering vibrant communities at MangaDemon
+            Game Developer & Community Manager
           </p>
-          
+
           <div className="flex flex-wrap gap-4 justify-center pt-4">
-            <Button 
-              size="lg" 
+            <Button
+              size="lg"
               className="bg-primary hover:bg-primary/90 text-primary-foreground glow-primary"
               onClick={() => scrollToSection("projects")}
             >
               View My Work
             </Button>
-            <Button 
-              size="lg" 
+            <Button
+              size="lg"
               variant="outline"
               className="border-border hover:bg-card"
               onClick={() => scrollToSection("contact")}
@@ -58,26 +58,36 @@ const Hero = () => {
               Get In Touch
             </Button>
           </div>
-          
+
           <div className="flex gap-8 justify-center pt-8">
-            <a href="https://github.com/RoGxGlory" target="_blank" rel="noopener noreferrer" 
-               className="text-muted-foreground hover:text-primary transition-all hover:scale-110">
+            <a
+              href="https://github.com/RoGxGlory"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-muted-foreground hover:text-primary transition-all hover:scale-110"
+            >
               <Github className="w-10 h-10" />
             </a>
-            <a href="https://www.linkedin.com/in/rayane-benabdeljalil-" target="_blank" rel="noopener noreferrer"
-               className="text-muted-foreground hover:text-primary transition-all hover:scale-110">
+            <a
+              href="https://www.linkedin.com/in/rayane-benabdeljalil-"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-muted-foreground hover:text-primary transition-all hover:scale-110"
+            >
               <Linkedin className="w-10 h-10" />
             </a>
-            <a href="mailto:benabdeljalilrayane1@gmail.com"
-               className="text-muted-foreground hover:text-primary transition-all hover:scale-110">
+            <a
+              href="mailto:benabdeljalilrayane1@gmail.com"
+              className="text-muted-foreground hover:text-primary transition-all hover:scale-110"
+            >
               <Mail className="w-10 h-10" />
             </a>
           </div>
         </div>
       </div>
-      
+
       {/* Scroll Indicator */}
-      <button 
+      <button
         onClick={() => scrollToSection("about")}
         className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce"
       >
