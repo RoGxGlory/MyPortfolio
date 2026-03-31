@@ -57,7 +57,55 @@ export const projects: Project[] = [
     gradient: "from-purple-500 to-pink-500",
     github: "https://github.com/RoGxGlory/VoidriftSurvivors",
     demo: "",
-    itchioUrl: "https://itch.io/embed-upload/13009874?color=333333",
+    itchioUrl: "https://html-classic.itch.zone/html/12773046/VampireSurvivor1.1/index.html",
+  },
+  {
+    id: "the-line",
+    title: "The Line",
+    description:
+      "A Unity WebGL game challenging players with precision movement and timing-based mechanics.",
+    fullDescription:
+      "The Line is a Unity-built browser game that tests players' precision and timing. Developed as a focused gameplay experience, it emphasizes clean mechanics and responsive controls within a minimalist design framework.",
+    detailedFeatures: [
+      "Precision-based movement mechanics",
+      "Timing-based gameplay challenges",
+      "WebGL build for instant browser play",
+      "Responsive controls optimized for web",
+    ],
+    technicalChallenges:
+      "Building tight, responsive controls in a WebGL environment while maintaining consistent frame rates and input handling across different browsers.",
+    myRole:
+      "Solo Developer — Designed and developed the entire game, from concept to WebGL deployment on itch.io.",
+    tags: ["Unity", "C#", "WebGL", "Game Design"],
+    image: "",
+    video: "",
+    videoType: "local",
+    gradient: "from-emerald-500 to-cyan-500",
+    itchioUrl: "https://html-classic.itch.zone/html/12514488/WebGL/index.html",
+  },
+  {
+    id: "flappy-bird",
+    title: "Flappy Bird",
+    description:
+      "A fun student project recreating the classic Flappy Bird experience in Unity, playable directly in the browser.",
+    fullDescription:
+      "A playful recreation of the iconic Flappy Bird game, built in Unity as a student project. This browser-playable version captures the addictive one-tap gameplay loop while serving as a hands-on exercise in 2D physics, collision detection, and WebGL deployment.",
+    detailedFeatures: [
+      "Classic one-tap gameplay mechanics",
+      "2D physics and collision system",
+      "Score tracking",
+      "WebGL build for instant browser play",
+    ],
+    technicalChallenges:
+      "Recreating the precise feel of the original game's physics — getting the gravity, flap force, and pipe spacing just right to make the gameplay satisfying and challenging.",
+    myRole:
+      "Solo Developer — Built the entire game as a fun student project, handling all design, programming, and WebGL deployment.",
+    tags: ["Unity", "C#", "WebGL", "2D"],
+    image: "",
+    video: "",
+    videoType: "local",
+    gradient: "from-yellow-500 to-green-500",
+    itchioUrl: "https://html-classic.itch.zone/html/12514531/WebGL/index.html",
   },
   {
     id: "vault-of-shadows",
