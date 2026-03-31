@@ -2,6 +2,37 @@ import { Project } from "@/types/project";
 
 export const projects: Project[] = [
   {
+    id: "havoc-the-new-reckoning",
+    title: "HAVOC: The New Reckoning",
+    description:
+      "A free-to-play browser-based multiplayer RPG with strategic combat, deep progression, and a passionate community — solo-developed and actively played by hundreds of players.",
+    fullDescription:
+      "HAVOC: The New Reckoning is a fully released, independent browser-based multiplayer RPG built from the ground up as a solo developer. What started as a passion project has grown into an active community of dedicated players. The game features deep strategic combat with 10+ attack types, crit mechanics, elemental damage, and multiplayer co-op battles. Every system — from tower battles and the companion system to crafting and skill trees — is shaped by direct community feedback. There are no pay-to-win mechanics. No predatory monetization. Just a game built for players who appreciate depth, lovecraftian vibes, and fairness.",
+    detailedFeatures: [
+      "Strategic combat system with 10+ attack types, crit mechanics, and elemental damage",
+      "Deep RPG progression with skill trees and character customization",
+      "Multiplayer co-op battles against monsters and bosses",
+      "Companion system with collectible and upgradeable allies",
+      "Crafting system with resource gathering and item creation",
+      "Tower battles with escalating difficulty and rewards",
+      "Active Discord community with regular events and feedback loops",
+      "Regular content updates driven by transparent development",
+      "Fair free-to-play model with no pay-to-win mechanics",
+    ],
+    technicalChallenges:
+      "Building a full-stack multiplayer RPG entirely in the browser with real-time combat, persistent player data, and a scalable backend architecture. Designing balanced progression systems that keep players engaged without resorting to predatory monetization. Managing a live service game as a solo developer — from server infrastructure and database optimization to community management and content updates.",
+    myRole:
+      "Solo Developer & Creator — Designed, developed, and launched the entire game independently. Responsible for all aspects: game design, frontend and backend development, database architecture, server infrastructure, community management, and ongoing live service updates.",
+    tags: ["Web RPG", "Multiplayer", "Full-Stack", "Live Service", "Community"],
+    image: "https://havocthenewreckoning.org/images/landing-hero.webp",
+    video: "",
+    videoType: "local",
+    gradient: "from-cyan-500 to-teal-700",
+    website: "https://havocthenewreckoning.org/",
+    demo: "https://havocthenewreckoning.org/play",
+    featured: true,
+  },
+  {
     id: "voidrift-survivors",
     title: "Voidrift Survivors",
     description:
