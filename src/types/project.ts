@@ -15,4 +15,5 @@ export interface Project {
   demo?: string;
   website?: string;
   gallery?: string[];
+  featured?: boolean;
 }
