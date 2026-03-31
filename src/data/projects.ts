@@ -57,6 +57,7 @@ export const projects: Project[] = [
     gradient: "from-purple-500 to-pink-500",
     github: "https://github.com/RoGxGlory/VoidriftSurvivors",
     demo: "",
+    itchioUrl: "https://itch.io/embed-upload/13009874?color=333333",
   },
   {
     id: "vault-of-shadows",
