@@ -58,6 +58,8 @@ const Navigation = () => {
             variant="ghost"
             size="icon"
             className="md:hidden"
+            aria-label={isOpen ? "Close menu" : "Open menu"}
+            aria-expanded={isOpen}
             onClick={() => setIsOpen(!isOpen)}
           >
             {isOpen ? <X /> : <Menu />}

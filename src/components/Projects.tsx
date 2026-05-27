@@ -31,7 +31,7 @@ const Projects = () => {
                   {project.image ? (
                     <img
                       src={project.image}
-                      alt={project.title}
+                      alt={`${project.title} — project cover`}
                       className="h-full min-h-[280px] w-full object-cover opacity-90 group-hover:opacity-100 transition-opacity"
                     />
                   ) : (
@@ -87,7 +87,7 @@ const Projects = () => {
                 {project.image ? (
                   <img
                     src={project.image}
-                    alt={project.title}
+                    alt={`${project.title} — project cover`}
                     className="h-48 w-full object-cover opacity-80 group-hover:opacity-100 transition-opacity"
                   />
                 ) : (

@@ -27,12 +27,10 @@ const Hero = () => {
         <div className="text-center space-y-6 animate-fade-in">
           <h1 className="text-5xl md:text-7xl font-bold">
             <span className="text-gradient">Benabdeljalil Rayane</span>
-            <br />
+            <span className="block text-xl md:text-2xl font-medium text-muted-foreground mt-4">
+              Game Developer, Community Manager &amp; Musician
+            </span>
           </h1>
-
-          <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto">
-            Game Developer, Community Manager & Musician
-          </p>
 
           <div className="flex flex-wrap gap-4 justify-center pt-4">
             <Button
@@ -57,6 +55,7 @@ const Hero = () => {
               href="https://github.com/RoGxGlory"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="GitHub profile"
               className="text-muted-foreground hover:text-primary transition-all hover:scale-110"
             >
               <Github className="w-10 h-10" />
@@ -65,12 +64,14 @@ const Hero = () => {
               href="https://www.linkedin.com/in/rayane-benabdeljalil-"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="LinkedIn profile"
               className="text-muted-foreground hover:text-primary transition-all hover:scale-110"
             >
               <Linkedin className="w-10 h-10" />
             </a>
             <a
               href="mailto:benabdeljalilrayane1@gmail.com"
+              aria-label="Send email"
               className="text-muted-foreground hover:text-primary transition-all hover:scale-110"
             >
               <Mail className="w-10 h-10" />
@@ -79,6 +80,7 @@ const Hero = () => {
               href="https://open.spotify.com/artist/1HSQULPueap6RRJf0bz7ph?si=GIvyMjrAQuyiwNGs18xKwQ"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Spotify artist page"
               className="text-muted-foreground hover:text-primary transition-all hover:scale-110"
               title="Spotify"
             >
@@ -88,6 +90,7 @@ const Hero = () => {
               href="https://www.youtube.com/@BenabRayane"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="YouTube channel"
               className="text-muted-foreground hover:text-primary transition-all hover:scale-110"
               title="YouTube"
             >
@@ -97,6 +100,7 @@ const Hero = () => {
               href="https://rog-merch-2.myshopify.com/"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Merch store"
               className="text-muted-foreground hover:text-primary transition-all hover:scale-110"
               title="Merch Store"
             >
@@ -105,6 +109,7 @@ const Hero = () => {
             <a
               href={`${import.meta.env.BASE_URL}CV_FR.pdf`}
               download="CV_FR.pdf"
+              aria-label="Download CV (PDF)"
               className="text-muted-foreground hover:text-primary transition-all hover:scale-110"
               title="Download CV"
             >
@@ -117,6 +122,7 @@ const Hero = () => {
       {/* Scroll Indicator */}
       <button
         onClick={() => scrollToSection("about")}
+        aria-label="Scroll to About section"
         className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce"
       >
         <ArrowDown className="w-6 h-6 text-muted-foreground" />
