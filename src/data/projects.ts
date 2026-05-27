@@ -78,7 +78,7 @@ export const projects: Project[] = [
         myRole:
             "Solo Developer — Designed and developed the entire game, from concept to WebGL deployment on itch.io.",
         tags: ["Unity", "C#", "WebGL", "Game Design"],
-        image: "",
+        image: `${import.meta.env.BASE_URL}ProjectsImages/TheLine.jpg`,
         video: "",
         videoType: "local",
         github: "https://github.com/RoGxGlory/TheLine",
@@ -103,7 +103,7 @@ export const projects: Project[] = [
         myRole:
             "Solo Developer — Built the entire game as a fun student project, handling all design, programming, and WebGL deployment.",
         tags: ["Unity", "C#", "WebGL", "2D"],
-        image: "",
+        image: `${import.meta.env.BASE_URL}ProjectsImages/FlappyBird.jpg`,
         video: "",
         videoType: "local",
         github: "https://github.com/RoGxGlory/FlappyBird",
