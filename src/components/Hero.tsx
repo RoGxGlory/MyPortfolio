@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowDown, Github, Linkedin, Mail, FileDown } from "lucide-react";
+import { ArrowDown, Github, Linkedin, Mail, FileDown, Music2, Youtube, ShoppingBag } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
 
 const Hero = () => {
@@ -31,7 +31,7 @@ const Hero = () => {
           </h1>
 
           <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto">
-            Game Developer & Community Manager
+            Game Developer, Community Manager & Musician
           </p>
 
           <div className="flex flex-wrap gap-4 justify-center pt-4">
@@ -74,6 +74,33 @@ const Hero = () => {
               className="text-muted-foreground hover:text-primary transition-all hover:scale-110"
             >
               <Mail className="w-10 h-10" />
+            </a>
+            <a
+              href="https://open.spotify.com/artist/1HSQULPueap6RRJf0bz7ph?si=GIvyMjrAQuyiwNGs18xKwQ"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-muted-foreground hover:text-primary transition-all hover:scale-110"
+              title="Spotify"
+            >
+              <Music2 className="w-10 h-10" />
+            </a>
+            <a
+              href="https://www.youtube.com/@BenabRayane"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-muted-foreground hover:text-primary transition-all hover:scale-110"
+              title="YouTube"
+            >
+              <Youtube className="w-10 h-10" />
+            </a>
+            <a
+              href="https://rog-merch-2.myshopify.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-muted-foreground hover:text-primary transition-all hover:scale-110"
+              title="Merch Store"
+            >
+              <ShoppingBag className="w-10 h-10" />
             </a>
             <a
               href={`${import.meta.env.BASE_URL}CV_FR.pdf`}
