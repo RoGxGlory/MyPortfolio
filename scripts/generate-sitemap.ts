@@ -1,8 +1,7 @@
 // Runs before `vite dev` and `vite build` (predev/prebuild hooks); writes public/sitemap.xml.
 
-import { writeFileSync } from "fs";
+import { writeFileSync, readFileSync } from "fs";
 import { resolve } from "path";
-import { projects } from "../src/data/projects";
 
 const BASE_URL = "https://rayanebenabdeljalil.com";
 
@@ -12,10 +11,17 @@ interface SitemapEntry {
   priority?: string;
 }
 
+// Parse project ids directly from the source file to avoid pulling in
+// Vite-only globals (import.meta.env) at Node script-runtime.
+const projectsSrc = readFileSync(resolve("src/data/projects.ts"), "utf8");
+const projectIds = Array.from(projectsSrc.matchAll(/^\s*id:\s*"([^"]+)"/gm)).map(
+  (m) => m[1]
+);
+
 const entries: SitemapEntry[] = [
   { path: "/", changefreq: "weekly", priority: "1.0" },
-  ...projects.map((p) => ({
-    path: `/project/${p.id}`,
+  ...projectIds.map((id) => ({
+    path: `/project/${id}`,
     changefreq: "monthly" as const,
     priority: "0.8",
   })),
