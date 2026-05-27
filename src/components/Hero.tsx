@@ -9,8 +9,17 @@ const Hero = () => {
 
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background Image */}
-      <div className="absolute inset-0 bg-cover bg-center opacity-30" style={{ backgroundImage: `url(${heroBg})` }} />
+      {/* Background Image — rendered as a real <img> so it can be the LCP element */}
+      <img
+        src={heroBg}
+        alt=""
+        aria-hidden="true"
+        width={1920}
+        height={1080}
+        fetchPriority="high"
+        decoding="async"
+        className="absolute inset-0 w-full h-full object-cover opacity-30"
+      />
 
       {/* Gradient Overlay */}
       <div className="absolute inset-0 gradient-hero" />
