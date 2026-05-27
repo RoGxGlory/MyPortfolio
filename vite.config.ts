@@ -5,8 +5,12 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  // Make the base dynamic! Production gets the sub-folder, Development gets the root.
-  base: mode === "production" ? "/MyPortfolio/" : "/",
+  // Only use the /MyPortfolio/ sub-path when explicitly building for GitHub Pages.
+  // All other deploys (Lovable, custom domain) are served from the root.
+  base:
+    mode === "production" && process.env.DEPLOY_TARGET === "gh-pages"
+      ? "/MyPortfolio/"
+      : "/",
   server: {
     host: "::",
     port: 8080,

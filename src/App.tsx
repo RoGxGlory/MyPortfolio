@@ -9,9 +9,9 @@ import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
 
-// React Router requires the basename to NOT have a trailing slash.
-// This gives "" in Lovable, and "/MyPortfolio" on GitHub Pages.
-const routerBasename = import.meta.env.MODE === "production" ? "/MyPortfolio" : "";
+// Use Vite's BASE_URL so the router basename always matches the build base.
+// "/" on Lovable & custom domain → "", "/MyPortfolio/" on GitHub Pages → "/MyPortfolio".
+const routerBasename = import.meta.env.BASE_URL.replace(/\/$/, "");
 
 const App = () => (
     <QueryClientProvider client={queryClient}>
