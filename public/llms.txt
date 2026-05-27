@@ -1,0 +1,17 @@
+# Rayane Benabdeljalil — Portfolio
+
+> Portfolio of Rayane Benabdeljalil — game developer, community manager and musician. Showcases shipped browser games, Unity/Unreal projects and creative work.
+
+## Pages
+
+- [Home](/): Bio, skills, featured projects and contact.
+
+## Projects
+
+- [HAVOC: The New Reckoning](/project/havoc-the-new-reckoning): Solo-developed browser-based multiplayer RPG.
+- [Vampire Survivors](/project/voidrift-survivors): Unity roguelike with object pooling and dynamic power-ups.
+- [The Line](/project/the-line): Unity WebGL precision/timing arcade game.
+- [Flappy Bird](/project/flappy-bird): Unity WebGL recreation of the classic Flappy Bird.
+- [Vault of Shadows](/project/vault-of-shadows): Unity dungeon crawler with encrypted saves and leaderboards.
+- [The Iron Curtain](/project/the-iron-curtain): Unreal Engine 4-player co-op survival horror.
+- [MangaDemon](/project/mangademon): Manga scanlation community and the Veyra web RPG.

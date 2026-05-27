@@ -1,4 +1,5 @@
 import { useParams, Link, Navigate } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 import { ArrowLeft, ExternalLink } from "lucide-react";
 import { Icon } from "@iconify/react";
 import { Button } from "@/components/ui/button";
@@ -14,8 +15,42 @@ const ProjectDetail = () => {
     return <Navigate to="/404" replace />;
   }
 
+  const siteUrl = "https://rayanebenabdeljalil.com";
+  const pageUrl = `${siteUrl}/project/${project.id}`;
+  const pageTitle = `${project.title} — Rayane Benabdeljalil`;
+  const ogImage = project.image
+    ? project.image.startsWith("http")
+      ? project.image
+      : `${siteUrl}${project.image.startsWith("/") ? "" : "/"}${project.image}`
+    : undefined;
+
+  const creativeWorkLd = {
+    "@context": "https://schema.org",
+    "@type": "CreativeWork",
+    name: project.title,
+    description: project.description,
+    url: pageUrl,
+    image: ogImage,
+    author: {
+      "@type": "Person",
+      name: "Rayane Benabdeljalil",
+      url: siteUrl,
+    },
+  };
+
   return (
     <div className="min-h-screen bg-background">
+      <Helmet>
+        <title>{pageTitle}</title>
+        <meta name="description" content={project.description} />
+        <link rel="canonical" href={pageUrl} />
+        <meta property="og:title" content={pageTitle} />
+        <meta property="og:description" content={project.description} />
+        <meta property="og:url" content={pageUrl} />
+        <meta property="og:type" content="article" />
+        {ogImage && <meta property="og:image" content={ogImage} />}
+        <script type="application/ld+json">{JSON.stringify(creativeWorkLd)}</script>
+      </Helmet>
       {/* Navigation */}
       <nav className="border-b border-border backdrop-blur-sm bg-background/80 sticky top-0 z-50">
         <div className="container mx-auto px-6 py-4">
