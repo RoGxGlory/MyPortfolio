@@ -4,6 +4,7 @@ import { ExternalLink, ArrowRight } from "lucide-react";
 import { Icon } from "@iconify/react";
 import { Link } from "react-router-dom";
 import { projects } from "@/data/projects";
+import SpellboundFeature from "@/components/SpellboundFeature";
 
 const Projects = () => {
   return (
@@ -19,7 +20,10 @@ const Projects = () => {
         {/* Featured Project - HAVOC */}
         {projects
           .filter((p) => p.featured)
-          .map((project) => (
+          .map((project) =>
+            project.id === "spellbound-survival" ? (
+              <SpellboundFeature key={project.id} project={project} />
+            ) : (
             <div key={project.id} className="max-w-6xl mx-auto mb-12">
               <Card className="glass-card border-primary/30 overflow-hidden group hover:border-primary/60 transition-all duration-500 relative">
                 <div className="absolute top-4 right-4 z-10">
@@ -72,7 +76,8 @@ const Projects = () => {
                 </div>
               </Card>
             </div>
-          ))}
+            ),
+          )}
 
         {/* Other Projects */}
         <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
