@@ -1,4 +1,4 @@
-import { Code2, Users, Gamepad2, Music2, Youtube, ShoppingBag } from "lucide-react";
+import { Code2, Users, Gamepad2, Youtube, ShoppingBag } from "lucide-react";
 
 const About = () => {
   return (
@@ -54,22 +54,7 @@ const About = () => {
               Music, content, and a merch brand of my own
             </p>
           </div>
-          <div className="grid md:grid-cols-3 gap-8">
-            <a
-              href="https://open.spotify.com/artist/1HSQULPueap6RRJf0bz7ph?si=GIvyMjrAQuyiwNGs18xKwQ"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="glass-card p-8 rounded-2xl hover:scale-105 transition-transform duration-300 block"
-            >
-              <div className="w-14 h-14 rounded-xl gradient-primary flex items-center justify-center mb-6">
-                <Music2 className="w-7 h-7 text-primary-foreground" />
-              </div>
-              <h3 className="text-xl font-bold mb-3">Musician on Spotify</h3>
-              <p className="text-muted-foreground">
-                Producing and releasing my own tracks — listen to my catalog on Spotify
-              </p>
-            </a>
-
+          <div className="grid md:grid-cols-2 gap-8">
             <a
               href="https://www.youtube.com/@BenabRayane"
               target="_blank"

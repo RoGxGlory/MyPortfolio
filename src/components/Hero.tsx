@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowDown, Github, Linkedin, Mail, FileDown, Music2, Youtube, ShoppingBag } from "lucide-react";
+import { ArrowDown, Github, Linkedin, Mail, FileDown, Youtube, ShoppingBag } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
 
 const Hero = () => {
@@ -84,16 +84,6 @@ const Hero = () => {
               className="text-muted-foreground hover:text-primary transition-all hover:scale-110"
             >
               <Mail className="w-10 h-10" />
-            </a>
-            <a
-              href="https://open.spotify.com/artist/1HSQULPueap6RRJf0bz7ph?si=GIvyMjrAQuyiwNGs18xKwQ"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Spotify artist page"
-              className="text-muted-foreground hover:text-primary transition-all hover:scale-110"
-              title="Spotify"
-            >
-              <Music2 className="w-10 h-10" />
             </a>
             <a
               href="https://www.youtube.com/@BenabRayane"
