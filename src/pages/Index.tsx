@@ -21,7 +21,6 @@ const Index = () => {
     sameAs: [
       "https://github.com/RoGxGlory",
       "https://www.linkedin.com/in/rayane-benabdeljalil-",
-      "https://open.spotify.com/artist/1HSQULPueap6RRJf0bz7ph",
       "https://www.youtube.com/@BenabRayane",
     ],
   };

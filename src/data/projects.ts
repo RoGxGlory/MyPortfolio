@@ -1,6 +1,35 @@
 import { Project } from "@/types/project";
+import spellboundHero from "../../public/ProjectsImages/SpellBoundSurvival.png.asset.json";
 
 export const projects: Project[] = [
+    {
+        id: "spellbound-survival",
+        title: "SpellBound: Survival",
+        description:
+            "A fast 3D survival roguelite with auto-cast spells, deep progression, artifact synergies and boss waves. Survive endless hordes, master unique magic schools and chase daily challenges.",
+        fullDescription:
+            "SpellBound: Survival is a browser-based 3D action roguelite in the bullet-heaven / Vampire Survivors genre. Players pick a class, auto-attack with evolving spells, collect artifacts with stacking synergies, and push against scaling waves and bosses across themed maps. It features daily challenges with affixes, ascension scaling, leaderboards, guilds, and a full encyclopedia of magic, fusions, ultimates, artifacts and lore.",
+        detailedFeatures: [
+            "3D action roguelite with auto-cast, evolving spells",
+            "Multiple classes and unique magic schools",
+            "Artifact system with stacking synergies and fusions",
+            "Scaling enemy waves, elite enemies and boss encounters",
+            "Daily challenges with rotating affixes and ascension scaling",
+            "Leaderboards, guilds and a full in-game encyclopedia and lore",
+        ],
+        technicalChallenges:
+            "Delivering smooth 3D bullet-heaven combat in the browser with hundreds of on-screen entities, real-time spell effects and persistent server-side accounts, runs and leaderboards — all while keeping the game performant across devices.",
+        myRole:
+            "Solo Developer & Creator — Designed and built the entire game: 3D gameplay, spell and artifact systems, progression, backend accounts, leaderboards and live content.",
+        tags: ["Web Game", "3D", "Roguelite", "Full-Stack", "Live Service"],
+        image: spellboundHero.url,
+        video: "",
+        videoType: "local",
+        gradient: "from-violet-600 to-fuchsia-600",
+        website: "https://spellboundsurvival.com",
+        demo: "https://spellboundsurvival.com",
+        featured: true,
+    },
     {
         id: "havoc-the-new-reckoning",
         title: "HAVOC: The New Reckoning",
