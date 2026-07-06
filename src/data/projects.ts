@@ -1,5 +1,4 @@
 import { Project } from "@/types/project";
-import spellboundHero from "@/assets/spellbound-cover.png.asset.json";
 
 export const projects: Project[] = [
     {
@@ -22,7 +21,7 @@ export const projects: Project[] = [
         myRole:
             "Solo Developer & Creator — Designed and built the entire game: 3D gameplay, spell and artifact systems, progression, backend accounts, leaderboards and live content.",
         tags: ["Web Game", "3D", "Roguelite", "Full-Stack", "Live Service"],
-        image: spellboundHero.url,
+        image: `${import.meta.env.BASE_URL}ProjectsImages/SpellBoundSurvival.png`,
         video: "",
         videoType: "local",
         gradient: "from-violet-600 to-fuchsia-600",
