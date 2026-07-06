@@ -1,5 +1,5 @@
 import { Project } from "@/types/project";
-import spellboundHero from "../../public/ProjectsImages/SpellBoundSurvival.png.asset.json";
+import spellboundHero from "@/assets/spellbound-cover.png.asset.json";
 
 export const projects: Project[] = [
     {
