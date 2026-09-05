@@ -37,6 +37,7 @@ export const projects: Project[] = [
             installedSize: "701.7 MB",
             storageRequired: "1 GB",
             developer: "Havoc Interactive",
+            playStoreUrl: "https://play.google.com/store/apps/details?id=com.spellboundsurvival.app",
         },
     },
     {

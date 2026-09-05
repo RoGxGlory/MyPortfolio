@@ -1,4 +1,4 @@
-import { Download, Monitor, HardDrive, Info, User, Disc3, Package } from "lucide-react";
+import { Download, Monitor, HardDrive, Info, User, Disc3, Package, ExternalLink, Smartphone } from "lucide-react";
 import type { Project } from "@/types/project";
 
 const DISPLAY = "'Cinzel Decorative', 'Cinzel', serif";
@@ -73,6 +73,48 @@ const DownloadGameCard = ({ project }: DownloadGameCardProps) => {
               {download.label}
             </span>
           </a>
+
+          {/* Store links */}
+          {(download.playStoreUrl || download.steamUrl) && (
+            <div className="flex flex-col gap-2 md:items-end">
+              <span
+                className="text-[10px] uppercase tracking-[0.25em] text-stone-500"
+                style={{ fontFamily: "'Cinzel', serif" }}
+              >
+                Also available on
+              </span>
+              <div className="flex flex-wrap gap-2">
+                {download.playStoreUrl && (
+                  <a
+                    href={download.playStoreUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 rounded-lg border border-emerald-500/30 bg-emerald-950/30 px-3 py-2 text-xs font-bold uppercase tracking-[0.12em] text-emerald-200/90 transition-colors hover:border-emerald-400/60 hover:bg-emerald-950/50"
+                    style={{ fontFamily: "'Cinzel', serif" }}
+                  >
+                    <Smartphone className="w-4 h-4" />
+                    Google Play
+                    <ExternalLink className="w-3 h-3 opacity-60" />
+                  </a>
+                )}
+                {download.steamUrl && (
+                  <a
+                    href={download.steamUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 rounded-lg border border-blue-500/30 bg-blue-950/30 px-3 py-2 text-xs font-bold uppercase tracking-[0.12em] text-blue-200/90 transition-colors hover:border-blue-400/60 hover:bg-blue-950/50"
+                    style={{ fontFamily: "'Cinzel', serif" }}
+                  >
+                    <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                      <path d="M11.979 0C5.369 0 0 5.367 0 11.979c0 5.45 3.445 10.073 8.313 11.809.1-.045.159-.138.159-.251v-2.062c-3.995.486-5.183-1.932-5.183-1.932-.701-1.78-1.713-2.254-1.713-2.254-1.401-.958.106-.94.106-.94 1.549.109 2.364 1.59 2.364 1.59 1.376 2.358 3.609 1.678 4.493 1.281.14-.998.538-1.679.979-2.064-3.188-.362-6.543-1.594-6.543-7.094 0-1.567.559-2.848 1.477-3.85-.148-.362-.64-1.819.14-3.791 0 0 1.205-.386 3.948 1.47 1.145-.318 2.373-.477 3.593-.482 1.22.005 2.449.164 3.598.482 2.74-1.856 3.943-1.47 3.943-1.47.782 1.972.29 3.429.142 3.791.92 1.002 1.475 2.283 1.475 3.85 0 5.513-3.359 6.727-6.557 7.082.518.446.978 1.324.978 2.67v3.953c0 .115.059.208.158.253 4.864-1.738 8.303-6.357 8.303-11.807C23.958 5.367 18.589 0 11.979 0z" />
+                    </svg>
+                    Steam
+                    <ExternalLink className="w-3 h-3 opacity-60" />
+                  </a>
+                )}
+              </div>
+            </div>
+          )}
         </div>
 
         {/* Quick spec badges */}
