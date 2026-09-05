@@ -1,4 +1,4 @@
-import { Download, Monitor, HardDrive, Info, User, Disc3, Package } from "lucide-react";
+import { Download, Monitor, HardDrive, Info, User, Disc3, Package, ExternalLink, Smartphone } from "lucide-react";
 import type { Project } from "@/types/project";
 
 const DISPLAY = "'Cinzel Decorative', 'Cinzel', serif";
