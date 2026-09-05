@@ -28,6 +28,16 @@ export const projects: Project[] = [
         website: "https://spellboundsurvival.com",
         demo: "https://spellboundsurvival.com",
         featured: true,
+        download: {
+            url: "https://downloads.rayanebenabdeljalil.com/Spellbound%20Survival/SpellBound%20Survival%20Setup%201.0.0.exe",
+            label: "Download Installer (v1.0.0)",
+            platform: "Windows 10 / 11 (64-bit)",
+            version: "v1.0.0",
+            fileSize: "156 MB",
+            installedSize: "701.7 MB",
+            storageRequired: "1 GB",
+            developer: "Havoc Interactive",
+        },
     },
     {
         id: "havoc-the-new-reckoning",

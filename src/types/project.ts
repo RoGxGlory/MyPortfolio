@@ -17,4 +17,14 @@ export interface Project {
   gallery?: string[];
   featured?: boolean;
   itchioUrl?: string;
+  download?: {
+    url: string;
+    label: string;
+    platform: string;
+    version: string;
+    fileSize: string;
+    installedSize: string;
+    storageRequired: string;
+    developer: string;
+  };
 }
