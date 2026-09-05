@@ -5,6 +5,7 @@ import { Icon } from "@iconify/react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import VideoPlayer from "@/components/VideoPlayer";
+import DownloadGameCard from "@/components/DownloadGameCard";
 import { projects } from "@/data/projects";
 
 const ProjectDetail = () => {
@@ -154,6 +155,11 @@ const ProjectDetail = () => {
                   <VideoPlayer project={project} />
                 </CardContent>
               </Card>
+            )}
+
+            {/* Download Game Section */}
+            {project.download && (
+              <DownloadGameCard project={project} />
             )}
 
             {/* Full Description */}
