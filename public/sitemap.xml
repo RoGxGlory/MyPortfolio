@@ -6,6 +6,11 @@
     <priority>1.0</priority>
   </url>
   <url>
+    <loc>https://rayanebenabdeljalil.com/project/spellbound-survival</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://rayanebenabdeljalil.com/project/havoc-the-new-reckoning</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
