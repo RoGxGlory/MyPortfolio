@@ -10,6 +10,8 @@ import { useState } from "react";
 import heroBg from "@/assets/hero-bg.jpg";
 
 const Hero = () => {
+  const [cvLang, setCvLang] = useState<"fr" | "en">("fr");
+
   const scrollToSection = (id: string) => {
     document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
   };
