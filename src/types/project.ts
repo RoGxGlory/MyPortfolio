@@ -26,5 +26,7 @@ export interface Project {
     installedSize: string;
     storageRequired: string;
     developer: string;
+    playStoreUrl?: string;
+    steamUrl?: string;
   };
 }
