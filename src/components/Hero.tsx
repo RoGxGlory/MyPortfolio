@@ -1,5 +1,12 @@
 import { Button } from "@/components/ui/button";
-import { ArrowDown, Github, Linkedin, Mail, FileDown, Youtube, ShoppingBag } from "lucide-react";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
+import { ArrowDown, Github, Linkedin, Mail, FileDown, Youtube, ShoppingBag, ChevronDown } from "lucide-react";
+import { useState } from "react";
 import heroBg from "@/assets/hero-bg.jpg";
 
 const Hero = () => {
