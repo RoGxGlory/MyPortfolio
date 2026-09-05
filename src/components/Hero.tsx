@@ -1,8 +1,17 @@
 import { Button } from "@/components/ui/button";
-import { ArrowDown, Github, Linkedin, Mail, FileDown, Youtube, ShoppingBag } from "lucide-react";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
+import { ArrowDown, Github, Linkedin, Mail, FileDown, Youtube, ShoppingBag, ChevronDown } from "lucide-react";
+import { useState } from "react";
 import heroBg from "@/assets/hero-bg.jpg";
 
 const Hero = () => {
+  const [cvLang, setCvLang] = useState<"fr" | "en">("fr");
+
   const scrollToSection = (id: string) => {
     document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
   };
@@ -105,15 +114,43 @@ const Hero = () => {
             >
               <ShoppingBag className="w-10 h-10" />
             </a>
-            <a
-              href={`${import.meta.env.BASE_URL}CV_FR.pdf`}
-              download="CV_FR.pdf"
-              aria-label="Download CV (PDF)"
-              className="text-muted-foreground hover:text-primary transition-all hover:scale-110"
-              title="Download CV"
-            >
-              <FileDown className="w-10 h-10" />
-            </a>
+            <DropdownMenu>
+              <DropdownMenuTrigger asChild>
+                <button
+                  aria-label="Download CV"
+                  title="Download CV"
+                  className="flex flex-col items-center text-muted-foreground hover:text-primary transition-all hover:scale-110"
+                >
+                  <FileDown className="w-10 h-10" />
+                  <span className="text-[10px] font-bold uppercase tracking-wider mt-0.5">
+                    {cvLang === "fr" ? "FR" : "EN"}
+                  </span>
+                  <ChevronDown className="w-3 h-3 -mt-0.5" />
+                </button>
+              </DropdownMenuTrigger>
+              <DropdownMenuContent align="center" className="min-w-[10rem]">
+                <DropdownMenuItem asChild>
+                  <a
+                    href={`${import.meta.env.BASE_URL}CV_FR.pdf`}
+                    download="CV_FR.pdf"
+                    onClick={() => setCvLang("fr")}
+                    className="cursor-pointer"
+                  >
+                    <span className="mr-2">🇫🇷</span> Français
+                  </a>
+                </DropdownMenuItem>
+                <DropdownMenuItem asChild>
+                  <a
+                    href={`${import.meta.env.BASE_URL}CV_ENG.pdf`}
+                    download="CV_ENG.pdf"
+                    onClick={() => setCvLang("en")}
+                    className="cursor-pointer"
+                  >
+                    <span className="mr-2">🇬🇧</span> English
+                  </a>
+                </DropdownMenuItem>
+              </DropdownMenuContent>
+            </DropdownMenu>
           </div>
         </div>
       </div>
