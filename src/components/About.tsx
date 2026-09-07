@@ -11,6 +11,10 @@ const About = () => {
           <p className="text-muted-foreground text-lg">
             Passionate about creating engaging experiences
           </p>
+          <p className="text-muted-foreground max-w-2xl mx-auto mt-4">
+            Founder of <span className="font-semibold text-foreground">Havoc Interactive</span> — the
+            independent game studio behind HAVOC: The New Reckoning and SpellBound: Survival.
+          </p>
         </div>
         
         <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">

@@ -1,6 +1,10 @@
 # Rayane Benabdeljalil — Portfolio
 
-> Portfolio of Rayane Benabdeljalil — game developer, community manager and musician. Showcases shipped browser games, Unity/Unreal projects and creative work.
+> Portfolio of Rayane Benabdeljalil — founder of Havoc Interactive, game developer, community manager and musician. Showcases shipped browser games, Unity/Unreal projects and creative work.
+
+## Havoc Interactive
+
+Havoc Interactive is the independent game studio founded by Rayane Benabdeljalil. Games produced under Havoc Interactive include HAVOC: The New Reckoning (https://havocthenewreckoning.org/) and SpellBound: Survival (https://spellboundsurvival.com).
 
 ## Pages
 

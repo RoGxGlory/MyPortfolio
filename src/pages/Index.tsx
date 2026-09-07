@@ -10,7 +10,7 @@ const Index = () => {
   const siteUrl = "https://rayanebenabdeljalil.com";
   const title = "Rayane Benabdeljalil — Game Developer & Musician";
   const description =
-    "Portfolio of Rayane Benabdeljalil — game developer, community manager and musician. Browse shipped games, technical projects and creative work.";
+    "Portfolio of Rayane Benabdeljalil — founder of Havoc Interactive, game developer, community manager and musician. Browse shipped games, technical projects and creative work.";
 
   const personLd = {
     "@context": "https://schema.org",
@@ -18,10 +18,30 @@ const Index = () => {
     name: "Rayane Benabdeljalil",
     jobTitle: "Game Developer, Community Manager & Musician",
     url: siteUrl,
+    founder: { "@type": "Organization", name: "Havoc Interactive" },
+    worksFor: { "@type": "Organization", name: "Havoc Interactive" },
     sameAs: [
       "https://github.com/RoGxGlory",
       "https://www.linkedin.com/in/rayane-benabdeljalil-",
       "https://www.youtube.com/@BenabRayane",
+    ],
+  };
+
+  const organizationLd = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: "Havoc Interactive",
+    description:
+      "Independent game studio founded by Rayane Benabdeljalil, creator of HAVOC: The New Reckoning and SpellBound: Survival.",
+    url: siteUrl,
+    founder: {
+      "@type": "Person",
+      name: "Rayane Benabdeljalil",
+      url: siteUrl,
+    },
+    makesOffer: [
+      { "@type": "VideoGame", name: "HAVOC: The New Reckoning", url: "https://havocthenewreckoning.org/" },
+      { "@type": "VideoGame", name: "SpellBound: Survival", url: "https://spellboundsurvival.com" },
     ],
   };
 
@@ -43,6 +63,7 @@ const Index = () => {
         <meta property="og:url" content={`${siteUrl}/`} />
         <meta property="og:type" content="website" />
         <script type="application/ld+json">{JSON.stringify(personLd)}</script>
+        <script type="application/ld+json">{JSON.stringify(organizationLd)}</script>
         <script type="application/ld+json">{JSON.stringify(websiteLd)}</script>
       </Helmet>
       <Navigation />
